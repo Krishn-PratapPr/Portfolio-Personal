@@ -119,6 +119,4 @@ To protect your API credentials and keep them out of GitHub:
 ---
 
 ## 🏆 Certifications & Achievements
-- **AWS Certified Cloud Practitioner** (Amazon Web Services)
-- **Meta Front-End Developer Professional Certificate** (Meta via Coursera)
 - **Project Recognition Letter** awarded by the Amroha Police Cyber Security Internship Program (APCSIP 2026) for the Email Header Analyzer tool.
