@@ -30,8 +30,8 @@ export const PERSONAL_INFO = {
     emailDirect: "mailto:krishnpratap975@gmail.com"
   },
   emailJs: {
-    serviceId: "service_voadgjh",
-    templateId: "template_2wi4hca",
-    publicKey: "MjQUGNMiEgiKV8Tow"
+    serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || "",
+    templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "",
+    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || ""
   }
 };

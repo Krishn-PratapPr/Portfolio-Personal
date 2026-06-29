@@ -101,23 +101,20 @@ Make sure you have [Node.js](https://nodejs.org/) installed (v18+ recommended).
 
 ## ⚙️ Configuration
 
-All personal information, social handles, and API keys are stored in a centralized configuration file at **`src/data/constants.js`**. 
+Centralized constants like your name, roles, social links, and project descriptions are configured in **`src/data/constants.js`**. 
 
-### Connecting the Contact Form (EmailJS)
-To enable form submissions to arrive directly in your inbox:
-1. Register at [EmailJS](https://www.emailjs.com/).
-2. Create an Email Service and an Email Template.
-3. Update your credentials in `src/data/constants.js`:
-   ```javascript
-   export const PERSONAL_INFO = {
-     ...
-     emailJs: {
-       serviceId: "service_voadgjh",
-       templateId: "template_2wi4hca",
-       publicKey: "MjQUGNMiEgiKV8Tow"
-     }
-   };
+### 🔐 Connecting the Contact Form (EmailJS) Safely
+
+To protect your API credentials and keep them out of GitHub:
+
+1. Create a local `.env` file in the root directory (based on `.env.example`):
+   ```env
+   VITE_EMAILJS_SERVICE_ID=your_service_id_here
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id_here
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key_here
    ```
+2. The portfolio will automatically load these at runtime using `import.meta.env`.
+3. Note: `.env` and `.env.local` are already added to `.gitignore` to ensure they are never publicly committed.
 
 ---
 
