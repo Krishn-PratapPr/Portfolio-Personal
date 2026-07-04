@@ -20,8 +20,8 @@ export const PROJECTS_DATA = [
     highlight: "Recruiter-focused handcrafted single-page web app built with smooth scrolling page transitions and custom glassmorphism components.",
     featured: false,
     techStack: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
-    githubUrl: "#",
-    liveUrl: "#",
+    githubUrl: "https://github.com/Krishn-PratapPr/Portfolio-Personal",
+    liveUrl: "https://krishnpratapsingh.dev",
     imageUrl: "/assets/portfolio-preview.png"
   }
 ];
